@@ -1,0 +1,10 @@
+pluginManagement {
+    repositories {
+        google()  // Required for Firebase services and Android dependencies
+        mavenCentral()  // Required for other dependencies
+    }
+}
+
+rootProject.name = "fcm_send_notification"  // Ensure your project name is correct
+
+include ':app'  // Include your module, if it's a single-module project, this stays as ':app'

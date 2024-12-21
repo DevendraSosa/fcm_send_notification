@@ -1,0 +1,22 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 34  // Update to API level 34
+
+    defaultConfig {
+        applicationId "com.example.fcm_send_notification"  // Change this to your actual app package name
+        minSdkVersion 21  // Or whatever is appropriate for your app
+        targetSdkVersion 34  // Update to API level 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    namespace 'com.example.fcm_send_notification'  // Add this line with your package name
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
